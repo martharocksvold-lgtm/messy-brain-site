@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Messy Brain: An intermittent brain-dumping tool that translates unstructured thoughts into a structured 4-bucket action board.">
+    <title>Messy Brain | Your Thoughts, Organized</title>
+    <style>
+        /* -- Indigo & Oat Palette -- */
+        :root {
+            --bg-color: #FAF8F0; /* Oat/Cream background */
+            --text-color: #2E3B55; /* Deep Indigo text */
+            --accent-color: #4B5678; /* Softer Indigo accent */
+            --highlight-color: #6D7B9B; /* Even lighter accent for details */
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* -- Layout Container -- */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* -- Header & Logo -- */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Stylized brain outline logo */
+        .logo {
+            width: 48px;
+            height: 48px;
+            border: 2px solid var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        /* -- Main Content Blocks -- */
+        main {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--highlight-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin: 0 0 20px 0;
+            font-size: 16px;
+            max-width: 500px;
+        }
+
+        /* -- Pricing Section -- */
+        .pricing-box {
+            background-color: rgba(75, 86, 120, 0.05); /* Very subtle indigo wash */
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid var(--highlight-color);
+        }
+
+        .price-text {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        /* Inactive button for preview */
+        .cta-button {
+            background-color: var(--accent-color);
+            color: #FFFFFF;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: default;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        /* -- Footer -- */
+        footer {
+            font-size: 12px;
+            color: var(--highlight-color);
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #EAEAEA;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        footer a {
+            color: var(--highlight-color);
+            text-decoration: underline;
+        }
+
+        /* -- Mobile Optimization -- */
+        @media (max-width: 480px) {
+            h1 { font-size: 24px; }
+            p { font-size: 14px; }
+            .container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">Ψ</div> <!-- Placeholder Brain Logo Symbol -->
+            <h1>Messy Brain</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Your Thoughts, Organized.</h2>
+                <p>Messy Brain is an intermittent brain-dumping tool designed to capture unstructured thoughts and instantly translate them into a structured 4-bucket action board. Move from overwhelm to clarity, effortlessly.</p>
+            </section>
+
+            <section class="pricing-box">
+                <h3 class="section-title">Pricing & Access</h3>
+                <p class="price-text">Start with a 14-Day Free Trial.</p>
+                <p class="price-text">Full access after trial: $7 USD/month.</p>
+                <a class="cta-button">Sign Up & Organize (Coming Soon)</a>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>Built with Intention by Martha Rocksvold.</p>
+        <p>Support Contact: <a href="mailto:support@messybrain.app">support@messybrain.app</a></p>
+        <p>&copy; 2026 Relational Continuity Systems. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
